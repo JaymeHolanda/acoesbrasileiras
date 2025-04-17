@@ -36,8 +36,4 @@ pip install -r requirements.txt
 ## Próximos Passos
 O próximo passo deste projeto será a implementação de dashboards interativos para análise das 290 empresas listadas, permitindo visualizações dinâmicas, filtros e insights personalizados para o RH e demais áreas interessadas.
 
----
 
-**Autor:** [Seu Nome]
-
-Dúvidas ou sugestões? Entre em contato!
