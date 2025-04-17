@@ -1,4 +1,4 @@
-# Projeto: Web Scraping de Ações Brasileiras para RH
+# Projeto: Web Scraping de Ações Brasileiras
 
 ## Objetivo
 O objetivo deste projeto é coletar, organizar e disponibilizar dados de todas as ações negociadas na bolsa brasileira, extraindo informações relevantes como Ticker, Nome, Valor de Mercado, P/L (Preço/Lucro), P/S (Preço/Vendas) e P/VPA (Preço/Valor Patrimonial). O foco é fornecer uma base de dados confiável e padronizada para análises de inteligência de mercado, business intelligence, estudos financeiros e aplicações em ciência de dados.
