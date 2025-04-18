@@ -1,4 +1,4 @@
-# Projeto: Web Scraping de Ações Brasileiras 
+# Projeto: Web Scraping de Ações Brasileiras
 
 ## Objetivo
 
@@ -52,6 +52,7 @@ pip install -r requirements.txt
    ```
    Isso irá criar o arquivo `relatorio_graficos.pdf` com todos os principais gráficos e análises extraídas dos dados.
 
+<<<<<<< HEAD
 ## Funcionalidades dos Gráficos
 
 - Top 3 ações com maior e menor valor de mercado
@@ -61,6 +62,20 @@ pip install -r requirements.txt
 - Top 10 empresas “baratas” (baixo P/L) com alto Dividend Yield (mostrando preço)
 - Todos os gráficos são salvos em PDF para fácil compartilhamento
 
+=======
+<<<<<<< HEAD
+
+=======
+## Funcionalidades dos Gráficos
+
+- Top 3 ações com maior e menor valor de mercado
+- Top 3 ações com maior e menor P/L
+- Top 5 setores com maior valor de mercado total
+- Top 10 setores com maior Dividend Yield médio
+- Top 10 empresas “baratas” (baixo P/L) com alto Dividend Yield (mostrando preço)
+- Todos os gráficos são salvos em PDF para fácil compartilhamento
+
+>>>>>>> 92716de
 
 ## Principais Insights Extraídos dos Gráficos
 
@@ -82,4 +97,9 @@ pip install -r requirements.txt
 
 - **Ranking de empresas:** Os gráficos permitem identificar rapidamente as empresas com maior e menor valor de mercado, bem como aquelas com extremos de P/L e Dividend Yield.
   
+<<<<<<< HEAD
   ![Ranking de empresas](IMG/Figure_5.png)
+=======
+  ![Ranking de empresas](IMG/Figure_5.png)
+>>>>>>> 21ffda5 (Atualiza README, adiciona imagens dos insights e mantém gráficos e scripts atualizados)
+>>>>>>> 92716de
