@@ -53,7 +53,7 @@ import re
 acoes = []
 for row in soup.select('tbody tr'):
     cols = row.find_all('td')
-    if len(cols) >= 7:  # Garante que há colunas suficientes
+    if len(cols) >= 12:  # Garante que há colunas suficientes
         texto = cols[0].get_text(strip=True)
         ticker = texto[:5].strip()
         nome_match = re.match(r'^([A-Z0-9]{4,5})\s*([A-ZÇÃÕÉÊÍÓÚÂÊÔÜÁÀÈÌÒÙÄËÏÖÜa-zçãõéêíóúâêôüáàèìòùäëïöü\s\./&-]+)', texto)
@@ -62,17 +62,30 @@ for row in soup.select('tbody tr'):
         else:
             nome = texto[len(ticker):].strip()
         nome = re.sub(r'\s+(ON|PN|NMD|N1D|OND|EJD|ED|NM|N2D|N2|N1|N3|EDJ|EJ|N|D|B|C|F|G|H|I|J|K|L|M|O|P|Q|R|S|T|U|V|W|X|Y|Z)($|\s)', '', nome, flags=re.IGNORECASE).strip()
-        valor_mercado = cols[2].get_text(strip=True)  # Ajuste o índice conforme necessário
-        pl = cols[3].get_text(strip=True)
-        ps = cols[4].get_text(strip=True)
-        pb = cols[5].get_text(strip=True)
+
+        preco = cols[1].get_text(strip=True)
+        variacao = cols[2].get_text(strip=True)
+        volume = cols[3].get_text(strip=True)
+        volume_rel = cols[4].get_text(strip=True)
+        valor_mercado = cols[5].get_text(strip=True)
+        pl = cols[6].get_text(strip=True)
+        # cols[7] =  EPS dil (não solicitado)
+        crescimento_eps = cols[8].get_text(strip=True)
+        div_yield = cols[9].get_text(strip=True)
+        setor = cols[10].get_text(strip=True)
+
         acoes.append({
             'Ticker': ticker,
             'Nome': nome,
+            'Preço': preco,
+            'Variação %': variacao,
+            'Volume': volume,
+            'Volume Rel': volume_rel,
             'Valor de Mercado': valor_mercado,
-            'PL': pl,
-            'PS': ps,
-            'PB': pb
+            'P/L': pl,
+            'Crescimento EPS dil.': crescimento_eps,
+            'Div. Yield %': div_yield,
+            'Setor': setor
         })
 
 driver.quit()
