@@ -52,7 +52,6 @@ pip install -r requirements.txt
    ```
    Isso irá criar o arquivo `relatorio_graficos.pdf` com todos os principais gráficos e análises extraídas dos dados.
 
-<<<<<<< HEAD
 ## Funcionalidades dos Gráficos
 
 - Top 3 ações com maior e menor valor de mercado
@@ -62,44 +61,43 @@ pip install -r requirements.txt
 - Top 10 empresas “baratas” (baixo P/L) com alto Dividend Yield (mostrando preço)
 - Todos os gráficos são salvos em PDF para fácil compartilhamento
 
-=======
-<<<<<<< HEAD
 
-=======
 ## Funcionalidades dos Gráficos
 
 - Top 3 ações com maior e menor valor de mercado
 - Top 3 ações com maior e menor P/L
 - Top 5 setores com maior valor de mercado total
 - Top 10 setores com maior Dividend Yield médio
-- Top 10 empresas “baratas” (baixo P/L) com alto Dividend Yield (mostrando preço)
-- Todos os gráficos são salvos em PDF para fácil compartilhamento
-
->>>>>>> 92716de
-
 ## Principais Insights Extraídos dos Gráficos
 
-- **Setores de maior valor de mercado:** O setor Financeiro lidera em valor de mercado total, seguido por Serviços Públicos e Minerais Energéticos.
-  
-  ![Setores de maior valor de mercado](IMG/Figure_1.png)
+**Foto 1 (Top 3 maior valor de mercado)**
 
-- **Setor mais lucrativo:** O setor de Minerais Energéticos apresenta o maior Dividend Yield médio entre todos os setores analisados.
-  
-  ![Setor mais lucrativo - DY médio](IMG/Figure_2.png)
+![Foto 1 - Top 3 maior valor de mercado](img/Figure_1.png)
 
-- **Empresas “baratas” com alto Dividend Yield:** Foram identificadas diversas empresas com P/L abaixo da mediana e Dividend Yield acima da mediana, o que pode indicar boas oportunidades de investimento.
-  
-  ![Empresas baratas com alto Dividend Yield](IMG/Figure_3.png)
+**Foto 2 (Top 3 menor valor de mercado)**
 
-- **Ação mais barata do setor mais lucrativo:** Dentro do setor de maior DY médio, foi possível identificar a ação de menor preço, facilitando análises de custo-benefício.
-  
-  ![Ação mais barata do setor mais lucrativo](IMG/Figure_4.png)
+![Foto 2 - Top 3 menor valor de mercado](img/Figure_2.png)
+
+**Foto 3 (Top 3 maior P/L)**
+
+![Foto 3 - Top 3 maior P/L](img/Figure_3.png)
+
+**Foto 4 (Top 3 menor P/L)**
+
+![Foto 4 - Top 3 menor P/L](img/Figure_4.png)
+
+**Foto 5 (Top 5 setores com maior valor de mercado total)**
+
+![Foto 5 - Top 5 setores com maior valor de mercado total](img/Figure_5.png)
+
+**Foto 6 (Top 10 setores com maior Dividend Yield médio)**
+
+![Foto 6 - Top 10 setores com maior Dividend Yield médio](img/Figure_6.png)
+
+**Foto 7 (Top 10 empresas baratas com alto Dividend Yield)**
+
+![Foto 7 - Top 10 empresas baratas com alto Dividend Yield](img/Figure_7.png)
 
 - **Ranking de empresas:** Os gráficos permitem identificar rapidamente as empresas com maior e menor valor de mercado, bem como aquelas com extremos de P/L e Dividend Yield.
   
-<<<<<<< HEAD
-  ![Ranking de empresas](IMG/Figure_5.png)
-=======
-  ![Ranking de empresas](IMG/Figure_5.png)
->>>>>>> 21ffda5 (Atualiza README, adiciona imagens dos insights e mantém gráficos e scripts atualizados)
->>>>>>> 92716de
+  ![Ranking de empresas](img/Figure_5.png)
